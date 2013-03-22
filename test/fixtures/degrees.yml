@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  people_importer_id: 1
+  degree_type: MyString
+  subject: MyString
+  institution: MyString
+  graduated_year: 1
+  graduated_month: 1
+  graduated_day: 1
+
+two:
+  people_importer_id: 1
+  degree_type: MyString
+  subject: MyString
+  institution: MyString
+  graduated_year: 1
+  graduated_month: 1
+  graduated_day: 1

@@ -1,3 +1,3 @@
 class Info < ActiveRecord::Base
-  attr_accessible :tag_list, :twitter_username
+  attr_accessible :birthplace, :born_day, :born_month, :born_year, :tag_list, :twitter_username
 end

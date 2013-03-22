@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>People importer:</b>
+  <%= @degree.people_importer_id %>
+</p>
+
+<p>
+  <b>Degree type:</b>
+  <%= @degree.degree_type %>
+</p>
+
+<p>
+  <b>Subject:</b>
+  <%= @degree.subject %>
+</p>
+
+<p>
+  <b>Institution:</b>
+  <%= @degree.institution %>
+</p>
+
+<p>
+  <b>Graduated year:</b>
+  <%= @degree.graduated_year %>
+</p>
+
+<p>
+  <b>Graduated month:</b>
+  <%= @degree.graduated_month %>
+</p>
+
+<p>
+  <b>Graduated day:</b>
+  <%= @degree.graduated_day %>
+</p>
+
+
+<%= link_to 'Edit', edit_degree_path(@degree) %> |
+<%= link_to 'Back', degrees_path %>

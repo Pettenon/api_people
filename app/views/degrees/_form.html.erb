@@ -1,0 +1,45 @@
+<%= form_for(@degree) do |f| %>
+  <% if @degree.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@degree.errors.count, "error") %> prohibited this degree from being saved:</h2>
+
+      <ul>
+      <% @degree.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :people_importer_id %><br />
+    <%= f.number_field :people_importer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :degree_type %><br />
+    <%= f.text_field :degree_type %>
+  </div>
+  <div class="field">
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject %>
+  </div>
+  <div class="field">
+    <%= f.label :institution %><br />
+    <%= f.text_field :institution %>
+  </div>
+  <div class="field">
+    <%= f.label :graduated_year %><br />
+    <%= f.number_field :graduated_year %>
+  </div>
+  <div class="field">
+    <%= f.label :graduated_month %><br />
+    <%= f.number_field :graduated_month %>
+  </div>
+  <div class="field">
+    <%= f.label :graduated_day %><br />
+    <%= f.number_field :graduated_day %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

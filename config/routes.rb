@@ -2,6 +2,9 @@ ApiPeople::Application.routes.draw do
   resources :infos
 
 
+  resources :degrees
+
+
   resources :people
 
 

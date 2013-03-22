@@ -18,7 +18,7 @@ class InfosControllerTest < ActionController::TestCase
 
   test "should create info" do
     assert_difference('Info.count') do
-      post :create, info: { tag_list: @info.tag_list, twitter_username: @info.twitter_username }
+      post :create, info: { birthplace: @info.birthplace, born_day: @info.born_day, born_month: @info.born_month, born_year: @info.born_year, tag_list: @info.tag_list, twitter_username: @info.twitter_username }
     end
 
     assert_redirected_to info_path(assigns(:info))
@@ -35,7 +35,7 @@ class InfosControllerTest < ActionController::TestCase
   end
 
   test "should update info" do
-    put :update, id: @info, info: { tag_list: @info.tag_list, twitter_username: @info.twitter_username }
+    put :update, id: @info, info: { birthplace: @info.birthplace, born_day: @info.born_day, born_month: @info.born_month, born_year: @info.born_year, tag_list: @info.tag_list, twitter_username: @info.twitter_username }
     assert_redirected_to info_path(assigns(:info))
   end
 

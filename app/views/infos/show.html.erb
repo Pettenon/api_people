@@ -10,6 +10,26 @@
   <%= @info.twitter_username %>
 </p>
 
+<p>
+  <b>Birthplace:</b>
+  <%= @info.birthplace %>
+</p>
+
+<p>
+  <b>Born year:</b>
+  <%= @info.born_year %>
+</p>
+
+<p>
+  <b>Born month:</b>
+  <%= @info.born_month %>
+</p>
+
+<p>
+  <b>Born day:</b>
+  <%= @info.born_day %>
+</p>
+
 
 <%= link_to 'Edit', edit_info_path(@info) %> |
 <%= link_to 'Back', infos_path %>
